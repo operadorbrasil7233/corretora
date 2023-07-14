@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ffd8b32f67.js" crossorigin="anonymous"></script>
+    <title>Calculadora Porcentagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+  <header>
+      <div class="container">
+          <h2>Realize a simulação desse investimento.</h2>
+          <div class="choose-calc">
+              <select name="choose-model" id="choose-model">
+                  <option value="1">Quanto vou receber</option>
+                  <option value="2">Qual foi a porcentagem do meu recebimento  </option>
+              </select>
+              <button class="check-select">Selecionar</button>
+          </div>
+      </div>
+  </header>
+  <main>
+    <div class="area-percent1">
+        <div class="percent-area1">
+            <label for="percent">Essa modalidade tem a rentabilidade de:<br />
+                <input type="tel" autocomplete="off" name="" id="percent" placeholder="Digite a ´Porcentagem 132%"title="Digite a Porcentagem 132%         </label><br />digite a porcentagem 32%
+            <label for="value-percent"> investi o valor de:<br />
+                <input type="tel" autocomplete="off" name="" id="value-percent" placeholder="valor que será investido" title="Digite o número" onkeypress="return onlynumber();">
+            </label><br/>
+            
+            <div class="buttons-area">
+                <button class="btn-calc"><i class="fa fa-calculator"></i>Calcular</button>
+                <button class="btn-clear"><i class="fa fa-trash"></i>Limpar dados</button>
+            </div>
+
+            <div class="result-area">
+                <span>Irei receber o valor total de </span>
+                <div class="result">--</div>
+            </div>
+        </div>
+    </div>
+
+    <!--AREA 2-->
+    <div class="area-percent2">
+        <div class="percent-area1">
+            <label for="percent">eu recebi:<br/>
+                <input type="tel" autocomplete="off" name="" id="percent2" placeholder="valor"title="Digite o valor" onkeypress="return onlynumber();">
+            </label><br />
+            <label for="value-percent">e apliquei inicialmente o valor de:<br/>
+                <input type="tel" autocomplete="off" name="" id="value-percent2" placeholder="valor" title="Digite o número" onkeypress="return onlynumber();">
+            </label><br/>
+            
+            <div class="buttons-area">
+                <button class="btn-calc2"><i class="fa fa-calculator"></i>Calcular</button>
+                <button class="btn-clear2"><i class="fa fa-trash"></i>Limpar dados</button>
+            </div>
+
+            <div class="result-area">
+                <span>qual a porcentagem de ganho obtive</span>
+                <div class="result2">--</div>
+            </div>
+        </div>
+    </div>
+
+  </main>
+  <footer>
+      
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
